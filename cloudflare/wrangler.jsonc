@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "huggingface-repos-proxy",
+  "main": "worker.js",
+  "compatibility_date": "2026-07-30",
+  "routes": [
+    {
+      "pattern": "glaubi.net/huggingface*",
+      "zone_name": "glaubi.net"
+    }
+  ]
+}
