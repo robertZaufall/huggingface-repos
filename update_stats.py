@@ -59,6 +59,8 @@ AUTO_KEYWORD_TERMS: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("Web", ("web", "javascript", "typescript")),
     ("Hub", ("hugging face hub", "model hub", "hub client")),
     ("Education", ("course", "tutorial", "cookbook")),
+    ("Genomics", ("genomic", "genomics", "carbon")),
+    ("Browser ML", ("browser ml", "browser")),
 )
 SUBSTRING_KEYWORDS: set[str] = set()
 
@@ -490,6 +492,7 @@ def cluster_repo(repo: dict[str, Any]) -> Cluster:
         "deep-rl-class": "education-community",
         "openenv": "agents-rl-alignment",
         "tau": "agents-rl-alignment",
+        "ml-intern": "agents-rl-alignment",
         "upskill": "agents-rl-alignment",
         "repo2rlenv": "agents-rl-alignment",
         "gym-hil": "agents-rl-alignment",
@@ -520,6 +523,7 @@ def cluster_repo(repo: dict[str, Any]) -> Cluster:
         "hf-hub": "data-evaluation-hub",
         "nfsserve": "data-evaluation-hub",
         "lerobot": "robotics-vision-audio",
+        "lerobot-humanoid": "robotics-vision-audio",
         "speech-to-speech": "robotics-vision-audio",
         "gsplat.js": "robotics-vision-audio",
         "meshgen": "robotics-vision-audio",
@@ -531,6 +535,7 @@ def cluster_repo(repo: dict[str, Any]) -> Cluster:
         "chat-ui": "apps-web-devtools",
         "huggingface.js": "apps-web-devtools",
         "aisheets": "apps-web-devtools",
+        "ratchet": "apps-web-devtools",
         "mongoku": "apps-web-devtools",
         "llm-vscode": "apps-web-devtools",
         "llm.nvim": "apps-web-devtools",
