@@ -495,6 +495,7 @@ def cluster_repo(repo: dict[str, Any]) -> Cluster:
         "upskill": "agents-rl-alignment",
         "repo2rlenv": "agents-rl-alignment",
         "gym-hil": "agents-rl-alignment",
+        "funes": "agents-rl-alignment",
         "peft": "training-inference-optimization",
         "accelerate": "training-inference-optimization",
         "text-embeddings-inference": "training-inference-optimization",
