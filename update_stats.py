@@ -38,6 +38,12 @@ from urllib.request import Request, urlopen
 
 ORG = "huggingface"
 MIN_STARS = 201
+# Repos that qualify by catalog rules (org-owned, stars, push window) but are
+# missing from GitHub search for the combined org+stars+pushed query. Fetched
+# via GET /repos/{org}/{name}; ownership is re-checked so transfers are skipped.
+SEARCH_INDEX_SUPPLEMENT: tuple[str, ...] = (
+    "open-r1",
+)
 TOP_PER_CLUSTER = 0
 TRACTION_DAYS = 30
 HISTORY_DAYS = 140
@@ -379,8 +385,50 @@ def fetch_repositories(client: GitHubClient, org: str, min_stars: int, pushed_cu
     query = f"org:{org} stars:>={min_stars} pushed:>={pushed_cutoff.date().isoformat()} fork:false archived:false"
     repos = fetch_search_repositories(client, query, pushed_cutoff)
     repos = [repo for repo in repos if repo["stars"] >= min_stars]
+    seen = {repo["full_name"].lower() for repo in repos}
+    for name in SEARCH_INDEX_SUPPLEMENT:
+        repo = fetch_named_repository(client, org, name, min_stars, pushed_cutoff)
+        if repo is None:
+            continue
+        key = repo["full_name"].lower()
+        if key in seen:
+            continue
+        repos.append(repo)
+        seen.add(key)
+        print(f"search-index supplement: added {repo['full_name']} ({repo['stars']}★)")
     repos.sort(key=lambda repo: repo["stars"], reverse=True)
     return repos
+
+
+def fetch_named_repository(
+    client: GitHubClient,
+    org: str,
+    name: str,
+    min_stars: int,
+    pushed_cutoff: datetime,
+) -> dict[str, Any] | None:
+    """Fetch one repo by name; used for known GitHub search-index misses."""
+    try:
+        data, _ = client.request(f"/repos/{org}/{name}")
+    except RuntimeError as exc:
+        print(f"  warning: search-index supplement {org}/{name}: {exc}", file=sys.stderr)
+        return None
+    owner = ((data.get("owner") or {}).get("login") or "").lower()
+    if owner != org.lower():
+        print(
+            f"search-index supplement: skip {org}/{name} "
+            f"(owner is {owner or 'unknown'}, not {org})",
+            file=sys.stderr,
+        )
+        return None
+    if data.get("fork") or data.get("archived") or data.get("private"):
+        return None
+    if int(data.get("stargazers_count") or 0) < min_stars:
+        return None
+    pushed_at = data.get("pushed_at") or ""
+    if not pushed_at or iso_to_datetime(pushed_at) < pushed_cutoff:
+        return None
+    return normalize_repo(data)
 
 
 def fetch_extra_section_repositories(client: GitHubClient, section: SourceSection, pushed_cutoff: datetime) -> list[dict[str, Any]]:
@@ -488,6 +536,7 @@ def cluster_repo(repo: dict[str, Any]) -> Cluster:
         "skills": "agents-rl-alignment",
         "ml-intern": "agents-rl-alignment",
         "trl": "agents-rl-alignment",
+        "open-r1": "agents-rl-alignment",
         "alignment-handbook": "agents-rl-alignment",
         "deep-rl-class": "education-community",
         "openenv": "agents-rl-alignment",
