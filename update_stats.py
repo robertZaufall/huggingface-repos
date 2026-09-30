@@ -579,6 +579,7 @@ def cluster_repo(repo: dict[str, Any]) -> Cluster:
         "computer-vision-course": "education-community",
         "audio-transformers-course": "education-community",
         "gym-aloha": "robotics-vision-audio",
+        "gym-pusht": "robotics-vision-audio",
         "carbon": "models-libraries",
         "transformers.js": "apps-web-devtools",
         "chat-ui": "apps-web-devtools",
@@ -600,6 +601,7 @@ def cluster_repo(repo: dict[str, Any]) -> Cluster:
         "ai-deadlines": "education-community",
         "mcp-course": "education-community",
         "hub-docs": "education-community",
+        "data-is-better-together": "data-evaluation-hub",
     }
     clusters_by_key = {cluster.key: cluster for cluster in CLUSTERS}
     name_override = name_overrides.get(repo["name"].lower())
