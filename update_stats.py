@@ -41,9 +41,8 @@ MIN_STARS = 201
 # Repos that qualify by catalog rules (org-owned, stars, push window) but are
 # missing from GitHub search for the combined org+stars+pushed query. Fetched
 # via GET /repos/{org}/{name}; ownership is re-checked so transfers are skipped.
-SEARCH_INDEX_SUPPLEMENT: tuple[str, ...] = (
-    "open-r1",
-)
+# open-r1 was listed here until 2026-10-06, when search indexed it again.
+SEARCH_INDEX_SUPPLEMENT: tuple[str, ...] = ()
 TOP_PER_CLUSTER = 0
 TRACTION_DAYS = 30
 HISTORY_DAYS = 140
