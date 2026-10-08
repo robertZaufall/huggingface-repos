@@ -600,6 +600,11 @@ def cluster_repo(repo: dict[str, Any]) -> Cluster:
         "ai-deadlines": "education-community",
         "mcp-course": "education-community",
         "hub-docs": "education-community",
+        # Sibling "minimal recipes to get started" notebook collections for model
+        # families; keep them together with cookbook/notebooks instead of letting
+        # one description's "inference" wording pull it into Training.
+        "huggingface-llama-recipes": "education-community",
+        "huggingface-gemma-recipes": "education-community",
         "data-is-better-together": "data-evaluation-hub",
     }
     clusters_by_key = {cluster.key: cluster for cluster in CLUSTERS}
