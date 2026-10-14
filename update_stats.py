@@ -68,6 +68,17 @@ AUTO_KEYWORD_TERMS: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("Browser ML", ("browser ml", "browser")),
 )
 SUBSTRING_KEYWORDS: set[str] = set()
+# Fallback descriptions for qualifying repos whose GitHub description is empty.
+# Each is condensed from the upstream README (evidence 2026-10-14) and is used only
+# while the GitHub description stays empty, so upstream edits always win.
+README_DESCRIPTION_FALLBACKS: dict[str, str] = {
+    "hf_transfer": "Power-user Rust library to speed up file transfers with the Hugging Face Hub beyond what Python can reach on high-bandwidth networks.",
+    "open_asr_leaderboard": "Code for the Open ASR Leaderboard, comparing the accuracy of speech recognition models across public ASR benchmark datasets on the Hub.",
+    "optimum-nvidia": "Optimized inference with NVIDIA and Hugging Face: faster LLM inference on the NVIDIA platform by changing a single line of transformers code.",
+    "huggingface-llama-recipes": "Minimal recipes to get started quickly with Llama 3.x models (3.1, 3.2, 3.3).",
+    "mcp-course": "The Model Context Protocol (MCP) Course: from MCP basics to a final project implementing MCP in an AI application.",
+    "lerobot-humanoid": "LeRobot humanoid workspace grouping the full project from mechanical/control co-design and hardware build assets to robot models, simulation and deployment.",
+}
 
 
 @dataclass(frozen=True)
@@ -476,7 +487,7 @@ def normalize_repo(item: dict[str, Any]) -> dict[str, Any]:
         "name": item.get("name", ""),
         "full_name": item.get("full_name", ""),
         "url": item.get("html_url", ""),
-        "description": item.get("description") or "",
+        "description": item.get("description") or README_DESCRIPTION_FALLBACKS.get(str(item.get("name", "")).lower(), ""),
         "language": item.get("language") or "Mixed",
         "topics": item.get("topics") or [],
         "stars": int(item.get("stargazers_count") or 0),
@@ -569,6 +580,7 @@ def cluster_repo(repo: dict[str, Any]) -> Cluster:
         "hf_transfer": "data-evaluation-hub",
         "xet-core": "data-evaluation-hub",
         "hf-hub": "data-evaluation-hub",
+        "open_asr_leaderboard": "data-evaluation-hub",
         "nfsserve": "data-evaluation-hub",
         "lerobot": "robotics-vision-audio",
         "lerobot-humanoid": "robotics-vision-audio",
