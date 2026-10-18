@@ -618,6 +618,10 @@ def cluster_repo(repo: dict[str, Any]) -> Cluster:
         "huggingface-llama-recipes": "education-community",
         "huggingface-gemma-recipes": "education-community",
         "data-is-better-together": "data-evaluation-hub",
+        # Papers with Code catalog client (papers, tasks, benchmarks, filtered
+        # leaderboard evaluations) shipped as CLI/Skill/MCP; its "for agents"
+        # tagline should not pull it out of the evaluation/leaderboard cluster.
+        "pwc-cli": "data-evaluation-hub",
     }
     clusters_by_key = {cluster.key: cluster for cluster in CLUSTERS}
     name_override = name_overrides.get(repo["name"].lower())
