@@ -31149,24 +31149,24 @@
           "stars": 1428
         },
         "huggingface/OpenEnv": {
-          "forks": 486,
-          "pushed_at": "2026-10-20T02:53:20Z",
-          "stars": 2729
+          "forks": 487,
+          "pushed_at": "2026-10-20T07:03:17Z",
+          "stars": 2731
         },
         "huggingface/Repo2RLEnv": {
           "forks": 111,
           "pushed_at": "2026-10-19T09:59:43Z",
-          "stars": 728
+          "stars": 730
         },
         "huggingface/accelerate": {
-          "forks": 1557,
-          "pushed_at": "2026-10-19T10:01:44Z",
-          "stars": 9921
+          "forks": 1558,
+          "pushed_at": "2026-10-20T11:52:08Z",
+          "stars": 9922
         },
         "huggingface/agents-course": {
           "forks": 2423,
           "pushed_at": "2026-10-14T11:34:52Z",
-          "stars": 33780
+          "stars": 33788
         },
         "huggingface/ai-deadlines": {
           "forks": 78,
@@ -31179,9 +31179,9 @@
           "stars": 1652
         },
         "huggingface/alignment-handbook": {
-          "forks": 526,
+          "forks": 528,
           "pushed_at": "2026-09-23T14:09:25Z",
-          "stars": 5696
+          "stars": 5697
         },
         "huggingface/audio-transformers-course": {
           "forks": 158,
@@ -31194,19 +31194,19 @@
           "stars": 4612
         },
         "huggingface/blog": {
-          "forks": 1055,
-          "pushed_at": "2026-10-20T05:16:03Z",
+          "forks": 1058,
+          "pushed_at": "2026-10-20T11:03:46Z",
           "stars": 3547
         },
         "huggingface/candle": {
-          "forks": 1817,
+          "forks": 1819,
           "pushed_at": "2026-10-14T11:15:47Z",
-          "stars": 21200
+          "stars": 21202
         },
         "huggingface/chat-ui": {
-          "forks": 1861,
-          "pushed_at": "2026-10-19T22:22:43Z",
-          "stars": 10990
+          "forks": 1866,
+          "pushed_at": "2026-10-20T10:40:56Z",
+          "stars": 10989
         },
         "huggingface/computer-vision-course": {
           "forks": 246,
@@ -31219,9 +31219,9 @@
           "stars": 2751
         },
         "huggingface/course": {
-          "forks": 1453,
+          "forks": 1454,
           "pushed_at": "2026-10-06T09:20:14Z",
-          "stars": 4309
+          "stars": 4312
         },
         "huggingface/data-is-better-together": {
           "forks": 29,
@@ -31229,14 +31229,14 @@
           "stars": 276
         },
         "huggingface/dataset-viewer": {
-          "forks": 138,
-          "pushed_at": "2026-10-20T05:40:44Z",
-          "stars": 903
+          "forks": 140,
+          "pushed_at": "2026-10-20T12:06:51Z",
+          "stars": 904
         },
         "huggingface/datasets": {
-          "forks": 3545,
+          "forks": 3547,
           "pushed_at": "2026-10-19T18:07:31Z",
-          "stars": 22069
+          "stars": 22070
         },
         "huggingface/datatrove": {
           "forks": 319,
@@ -31249,17 +31249,17 @@
           "stars": 5065
         },
         "huggingface/diffusers": {
-          "forks": 7406,
-          "pushed_at": "2026-10-20T05:35:32Z",
-          "stars": 34765
+          "forks": 7409,
+          "pushed_at": "2026-10-20T10:18:48Z",
+          "stars": 34768
         },
         "huggingface/diffusion-models-class": {
           "forks": 495,
           "pushed_at": "2026-10-14T16:14:19Z",
-          "stars": 4379
+          "stars": 4380
         },
         "huggingface/evaluate": {
-          "forks": 356,
+          "forks": 358,
           "pushed_at": "2026-10-06T09:34:54Z",
           "stars": 2492
         },
@@ -31269,8 +31269,8 @@
           "stars": 1361
         },
         "huggingface/funes": {
-          "forks": 48,
-          "pushed_at": "2026-10-19T13:16:21Z",
+          "forks": 49,
+          "pushed_at": "2026-10-20T09:44:19Z",
           "stars": 571
         },
         "huggingface/gpu-fryer": {
@@ -31311,7 +31311,7 @@
         "huggingface/hf-mount": {
           "forks": 72,
           "pushed_at": "2026-10-18T08:53:00Z",
-          "stars": 816
+          "stars": 817
         },
         "huggingface/hf_transfer": {
           "forks": 43,
@@ -31320,13 +31320,13 @@
         },
         "huggingface/hub-docs": {
           "forks": 518,
-          "pushed_at": "2026-10-20T03:20:43Z",
+          "pushed_at": "2026-10-20T12:08:46Z",
           "stars": 611
         },
         "huggingface/huggingface-gemma-recipes": {
           "forks": 46,
           "pushed_at": "2026-08-25T12:10:02Z",
-          "stars": 303
+          "stars": 304
         },
         "huggingface/huggingface-llama-recipes": {
           "forks": 87,
@@ -31334,13 +31334,13 @@
           "stars": 711
         },
         "huggingface/huggingface.js": {
-          "forks": 981,
+          "forks": 982,
           "pushed_at": "2026-10-20T03:22:41Z",
           "stars": 2566
         },
         "huggingface/huggingface_hub": {
           "forks": 1287,
-          "pushed_at": "2026-10-20T03:02:08Z",
+          "pushed_at": "2026-10-20T09:48:05Z",
           "stars": 3991
         },
         "huggingface/kernels": {
@@ -31349,9 +31349,9 @@
           "stars": 776
         },
         "huggingface/lerobot": {
-          "forks": 5917,
-          "pushed_at": "2026-10-20T03:43:37Z",
-          "stars": 28309
+          "forks": 5916,
+          "pushed_at": "2026-10-20T07:55:38Z",
+          "stars": 28326
         },
         "huggingface/lerobot-humanoid": {
           "forks": 26,
@@ -31359,12 +31359,12 @@
           "stars": 261
         },
         "huggingface/lighteval": {
-          "forks": 585,
+          "forks": 587,
           "pushed_at": "2026-10-06T09:36:52Z",
-          "stars": 2564
+          "stars": 2565
         },
         "huggingface/llm-ls": {
-          "forks": 80,
+          "forks": 81,
           "pushed_at": "2026-09-23T12:33:55Z",
           "stars": 881
         },
@@ -31395,12 +31395,12 @@
         },
         "huggingface/nfsserve": {
           "forks": 95,
-          "pushed_at": "2026-10-14T11:27:17Z",
+          "pushed_at": "2026-10-20T10:23:33Z",
           "stars": 768
         },
         "huggingface/notebooks": {
           "forks": 1844,
-          "pushed_at": "2026-10-20T05:42:04Z",
+          "pushed_at": "2026-10-20T10:42:43Z",
           "stars": 4647
         },
         "huggingface/open-r1": {
@@ -31411,10 +31411,10 @@
         "huggingface/open_asr_leaderboard": {
           "forks": 140,
           "pushed_at": "2026-10-20T01:24:15Z",
-          "stars": 266
+          "stars": 267
         },
         "huggingface/optimum": {
-          "forks": 707,
+          "forks": 710,
           "pushed_at": "2026-10-19T15:55:35Z",
           "stars": 3507
         },
@@ -31444,24 +31444,24 @@
           "stars": 1038
         },
         "huggingface/optimum-quanto": {
-          "forks": 96,
+          "forks": 95,
           "pushed_at": "2026-10-14T08:07:02Z",
           "stars": 1053
         },
         "huggingface/peft": {
-          "forks": 2754,
+          "forks": 2762,
           "pushed_at": "2026-10-20T04:00:03Z",
           "stars": 21811
         },
         "huggingface/pwc-cli": {
           "forks": 13,
-          "pushed_at": "2026-10-18T12:43:25Z",
+          "pushed_at": "2026-10-20T10:00:04Z",
           "stars": 209
         },
         "huggingface/pytorch-image-models": {
           "forks": 5218,
           "pushed_at": "2026-10-20T01:43:58Z",
-          "stars": 37228
+          "stars": 37229
         },
         "huggingface/ratchet": {
           "forks": 46,
@@ -31484,19 +31484,19 @@
           "stars": 1134
         },
         "huggingface/sentence-transformers": {
-          "forks": 2968,
-          "pushed_at": "2026-10-19T11:31:46Z",
-          "stars": 19194
+          "forks": 2969,
+          "pushed_at": "2026-10-20T11:52:55Z",
+          "stars": 19196
         },
         "huggingface/setfit": {
           "forks": 271,
           "pushed_at": "2026-10-06T20:25:36Z",
-          "stars": 2849
+          "stars": 2850
         },
         "huggingface/skills": {
           "forks": 774,
           "pushed_at": "2026-10-08T15:30:08Z",
-          "stars": 11187
+          "stars": 11185
         },
         "huggingface/smol-course": {
           "forks": 2276,
@@ -31504,9 +31504,9 @@
           "stars": 6780
         },
         "huggingface/smolagents": {
-          "forks": 3109,
+          "forks": 3111,
           "pushed_at": "2026-10-06T18:35:07Z",
-          "stars": 29937
+          "stars": 29942
         },
         "huggingface/smollm": {
           "forks": 325,
@@ -31514,9 +31514,9 @@
           "stars": 3928
         },
         "huggingface/speech-to-speech": {
-          "forks": 1727,
+          "forks": 1728,
           "pushed_at": "2026-10-19T18:13:59Z",
-          "stars": 13516
+          "stars": 13523
         },
         "huggingface/swift-transformers": {
           "forks": 217,
@@ -31526,7 +31526,7 @@
         "huggingface/tau": {
           "forks": 387,
           "pushed_at": "2026-10-19T17:35:19Z",
-          "stars": 2970
+          "stars": 2971
         },
         "huggingface/text-embeddings-inference": {
           "forks": 469,
@@ -31539,19 +31539,19 @@
           "stars": 11187
         },
         "huggingface/transformers": {
-          "forks": 34913,
-          "pushed_at": "2026-10-20T06:16:24Z",
-          "stars": 167881
+          "forks": 34919,
+          "pushed_at": "2026-10-20T12:08:06Z",
+          "stars": 167896
         },
         "huggingface/transformers.js": {
-          "forks": 1204,
-          "pushed_at": "2026-10-15T06:39:00Z",
+          "forks": 1206,
+          "pushed_at": "2026-10-20T12:05:26Z",
           "stars": 16355
         },
         "huggingface/trl": {
           "forks": 3084,
-          "pushed_at": "2026-10-20T05:30:18Z",
-          "stars": 19556
+          "pushed_at": "2026-10-20T12:03:46Z",
+          "stars": 19557
         },
         "huggingface/upskill": {
           "forks": 92,
@@ -31560,7 +31560,7 @@
         },
         "huggingface/xet-core": {
           "forks": 106,
-          "pushed_at": "2026-10-19T17:24:58Z",
+          "pushed_at": "2026-10-20T09:39:32Z",
           "stars": 613
         }
       }
