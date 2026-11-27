@@ -587,6 +587,7 @@ def cluster_repo(repo: dict[str, Any]) -> Cluster:
         "nfsserve": "data-evaluation-hub",
         "lerobot": "robotics-vision-audio",
         "lerobot-humanoid": "robotics-vision-audio",
+        "lelab": "robotics-vision-audio",
         "speech-to-speech": "robotics-vision-audio",
         "gsplat.js": "robotics-vision-audio",
         "meshgen": "agents-rl-alignment",
